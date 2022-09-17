@@ -8,6 +8,60 @@
     <title>Sign-Up Form</title>
 </head>
 <body>
-    <p>test</p>
+    <div class="side">
+        <div class="banner">
+            <div class="banner_main">
+                <img src="assets/odin-lined.png " alt="banner image"> 
+                <div class="banner_text">ODIN</div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="top">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco  
+            <br>
+            <br>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        </div>    
+        <div class="middle">
+            <h2>Let's do this!</h2>
+            <form id="myForm" class="form">                
+                <div>
+                    <label for="FName">First Name</label>
+                    <input type="text"id="FName" required>
+                </div>
+                <div>
+                    <label for="LName">Last Name</label>
+                    <input type="text"id="LName required">
+                </div>
+                <div>
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="phoneNum">Phone Number (xxx-xxx-xxx)</label>
+                    <input type="tel" pattern="^\d{3}-\d{3}-\d{4}$"
+                    id="phoneNum" required>
+                </div>
+                <div>
+                    <label for="Password1">Password</label>
+                    <input type="password"id="Password1" required>
+                </div>
+                <div>
+                    <label for="Password2">Confirm Password</label>
+                    <input type="password"id="Password2" required>
+                    <div class="error"></div>
+                </div>
+
+            </form>
+        </div>    
+        <div class="bottom">
+            <input class="submitBtn" type="button" value="Create Account"/>
+            <div> Already have an account? <a href="#">Log in</a></div> 
+        </div>    
+    </div>
+    <script src="sign-up-form.js"></script>
 </body>
 </html>
